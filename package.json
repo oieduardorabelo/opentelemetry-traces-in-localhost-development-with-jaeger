@@ -1,0 +1,21 @@
+{
+  "name": "otel-localhost",
+  "version": "0.1.0",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "scripts": {
+    "dev": "bun --preload ./instrumentation.ts --watch src/index.ts"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@opentelemetry/api": "^1.9.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.56.0",
+    "@opentelemetry/sdk-node": "^0.56.0",
+    "hono": "^4.6.14"
+  }
+}
